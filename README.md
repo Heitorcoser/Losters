@@ -16,6 +16,8 @@ encontre um dragão, enfrente o Mestre Encapuzado... e descubra para onde você 
 
 <br>
 
+<a href="https://heitorcoser.github.io/Losters/jogar/"><img src="https://img.shields.io/badge/JOGAR%20NO%20NAVEGADOR-%E2%96%B6-ffe680?style=for-the-badge" alt="Jogar no navegador" height="42"></a>
+&nbsp;
 <a href="https://github.com/heitorcoser/losters/releases/latest/download/Perdido.apk"><img src="https://img.shields.io/badge/BAIXAR%20PARA%20ANDROID-Perdido.apk-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Baixar para Android" height="42"></a>
 &nbsp;
 <a href="https://github.com/heitorcoser/losters/releases/latest/download/Perdido-Setup.exe"><img src="https://img.shields.io/badge/BAIXAR%20PARA%20WINDOWS-Perdido--Setup.exe-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Baixar para Windows" height="42"></a>
@@ -114,6 +116,7 @@ encontre um dragão, enfrente o Mestre Encapuzado... e descubra para onde você 
 
 | | Plataforma | Arquivo | Como instalar |
 |:---:|---|---|---|
+| 🌐 | **Navegador** (PC ou celular) | [**Jogar agora**](https://heitorcoser.github.io/Losters/jogar/) | Não precisa instalar nada. Site: [heitorcoser.github.io/Losters](https://heitorcoser.github.io/Losters/) |
 | 📱 | **Android** 7.0 ou mais | [**Perdido.apk**](https://github.com/heitorcoser/losters/releases/latest/download/Perdido.apk) | Baixe e abra o arquivo. Se o Android pedir, permita **instalar apps de fontes desconhecidas**. |
 | 💻 | **Windows 10 / 11** | [**Perdido-Setup.exe**](https://github.com/heitorcoser/losters/releases/latest/download/Perdido-Setup.exe) | Abra o instalador: ele instala e já abre o jogo. Se aparecer *"o Windows protegeu o computador"*, clique em **Mais informações → Executar assim mesmo**. |
 
