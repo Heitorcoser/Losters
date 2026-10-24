@@ -7,6 +7,7 @@ name: Lançar versão
 on:
   push:
     branches: [main]
+    paths-ignore: ['README.md', 'arte/**']
   workflow_dispatch:
 
 permissions:
