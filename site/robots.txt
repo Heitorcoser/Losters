@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://heitorcoser.github.io/losters/sitemap.xml

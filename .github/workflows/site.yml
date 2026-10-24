@@ -1,0 +1,38 @@
+name: Site
+
+# Publica o site do jogo no GitHub Pages: a página inicial (pasta site/) e o
+# jogo jogável no navegador (pasta www/, em /jogar/).
+on:
+  push:
+    branches: [main]
+    paths: ['site/**', 'www/**', '.github/workflows/site.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Montar o site
+        run: |
+          mkdir _site
+          cp -r site/. _site/
+          cp -r www _site/jogar
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4

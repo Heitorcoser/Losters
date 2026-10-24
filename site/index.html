@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Losters — PERDIDO | Jogo inspirado em Undertale e Deltarune</title>
+<meta name="description" content="PERDIDO é um RPG em pixel art inspirado em Undertale e Deltarune. Jogue grátis no navegador, no Android ou no Windows. 14 fases, chefes, dragões, rotas Pacifista, Neutra e Genocida, e multiplayer cooperativo entre PC e celular.">
+<meta name="keywords" content="Losters, Perdido, Undertale, Deltarune, fangame, jogo, RPG, pixel art, jogo brasileiro, multiplayer, Android, Windows">
+<meta name="author" content="Heitorcoser">
+<link rel="canonical" href="https://heitorcoser.github.io/losters/">
+<meta name="theme-color" content="#0a0614">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Losters">
+<meta property="og:title" content="Losters — PERDIDO">
+<meta property="og:description" content="Um RPG em pixel art inspirado em Undertale e Deltarune. Jogue grátis no navegador, Android ou Windows.">
+<meta property="og:image" content="https://heitorcoser.github.io/losters/img/banner.png">
+<meta property="og:url" content="https://heitorcoser.github.io/losters/">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Losters — PERDIDO">
+<meta name="twitter:description" content="Um RPG em pixel art inspirado em Undertale e Deltarune.">
+<meta name="twitter:image" content="https://heitorcoser.github.io/losters/img/banner.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "PERDIDO (Losters)",
+  "alternateName": "Losters",
+  "description": "RPG em pixel art inspirado em Undertale e Deltarune, com 14 fases, rotas Pacifista, Neutra e Genocida e multiplayer cooperativo.",
+  "url": "https://heitorcoser.github.io/losters/",
+  "image": "https://heitorcoser.github.io/losters/img/banner.png",
+  "genre": ["RPG", "Aventura"],
+  "gamePlatform": ["Android", "Windows", "Navegador"],
+  "playMode": ["SinglePlayer", "CoOp"],
+  "inLanguage": "pt-BR",
+  "author": { "@type": "Person", "name": "Heitorcoser", "url": "https://github.com/Heitorcoser" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" }
+}
+</script>
+<style>
+  @font-face { font-family: "VT323"; src: url(jogar/fonts/vt323.woff2) format("woff2"); font-display: swap; }
+  @font-face { font-family: "PressStart"; src: url(jogar/fonts/pressstart2p.woff2) format("woff2"); font-display: swap; }
+  :root { --bg: #0a0614; --bg2: #140c24; --fg: #f0f0f0; --muted: #b8b0c8; --yellow: #ffe680; --orange: #ff8a3a; --cyan: #5ff8ff; --red: #ff3b3b; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 22px/1.35 "VT323", monospace; }
+  a { color: var(--cyan); }
+  img { image-rendering: pixelated; max-width: 100%; height: auto; display: block; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+  header { background: linear-gradient(#0a0614, #1e0f3a 70%, #3a1450); padding-bottom: 28px; }
+  header img { width: 100%; height: auto; }
+  h1, h2, h3 { font-family: "PressStart", monospace; font-weight: normal; line-height: 1.4; }
+  h1 { font-size: 0; margin: 0; }
+  h2 { font-size: 20px; color: var(--yellow); margin: 48px 0 18px; text-align: center; }
+  .tag { text-align: center; color: var(--yellow); font-size: 28px; margin: 18px 0 6px; }
+  .sub { text-align: center; color: var(--muted); margin: 0 auto 24px; max-width: 720px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+  .btn { display: inline-block; padding: 14px 20px; border: 4px solid currentColor; color: var(--yellow); text-decoration: none; font: 15px "PressStart", monospace; background: #000; }
+  .btn:hover, .btn:focus { background: #1a1a1a; }
+  .btn.play { color: #000; background: var(--yellow); border-color: var(--yellow); font-size: 18px; padding: 18px 26px; }
+  .btn.play:hover { background: #fff3b8; }
+  .btn.android { color: #3ddc84; } .btn.windows { color: #4aa8ff; } .btn.gh { color: var(--muted); }
+  nav { position: sticky; top: 0; z-index: 5; background: rgba(10,6,20,0.92); border-bottom: 2px solid #2a1e44; }
+  nav .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 22px; padding: 10px 16px; }
+  nav a { color: var(--fg); text-decoration: none; font-size: 22px; } nav a:hover { color: var(--yellow); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .shot { margin: 0; border: 4px solid #fff; background: #000; }
+  .shot figcaption { padding: 6px 10px; font-size: 20px; color: var(--muted); background: #000; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+  .card { border: 4px solid #fff; padding: 16px; background: #000; }
+  .card h3 { font-size: 13px; color: var(--orange); margin: 0 0 10px; }
+  .card p { margin: 0; color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; background: #000; border: 4px solid #fff; }
+  th, td { border: 1px solid #333; padding: 8px 12px; text-align: left; }
+  th { color: var(--yellow); font-weight: normal; }
+  footer { margin-top: 56px; padding: 26px 0 40px; border-top: 2px solid #2a1e44; text-align: center; color: var(--muted); font-size: 19px; }
+  .heart { color: var(--red); }
+  @media (max-width: 560px) { body { font-size: 20px; } h2 { font-size: 15px; } .btn { font-size: 12px; padding: 12px 14px; } .btn.play { font-size: 14px; } }
+</style>
+</head>
+<body>
+<header>
+  <img src="img/banner.png" alt="PERDIDO — personagens do jogo: o dragão, o Instrutor, Kai, você, Luna, Bit, Carmim e o Mestre Encapuzado" width="1280" height="400">
+  <div class="wrap">
+    <h1>PERDIDO — Losters</h1>
+    <p class="tag">Um RPG em pixel art inspirado em Undertale e Deltarune</p>
+    <p class="sub">Você caiu num mundo debaixo da terra. Faça amigos, poupe (ou não) os monstros, encontre um dragão, enfrente o Mestre Encapuzado... e descubra para onde você vai.</p>
+    <div class="btns">
+      <a class="btn play" href="jogar/">&#9654; JOGAR AGORA</a>
+    </div>
+    <div class="btns" style="margin-top:14px">
+      <a class="btn android" href="https://github.com/heitorcoser/losters/releases/latest/download/Perdido.apk">ANDROID (.apk)</a>
+      <a class="btn windows" href="https://github.com/heitorcoser/losters/releases/latest/download/Perdido-Setup.exe">WINDOWS 10/11</a>
+      <a class="btn gh" href="https://github.com/heitorcoser/losters">GITHUB</a>
+    </div>
+  </div>
+</header>
+
+<nav><div class="wrap">
+  <a href="#telas">Imagens</a><a href="#recursos">Recursos</a><a href="#multiplayer">Multiplayer</a><a href="#baixar">Baixar</a><a href="#controles">Controles</a>
+</div></nav>
+
+<main class="wrap">
+  <section id="telas">
+    <h2>IMAGENS</h2>
+    <div class="grid">
+      <figure class="shot"><img src="img/03-batalha.png" alt="Batalha contra o FireGhost" loading="lazy" width="640" height="480"><figcaption>Boss: FireGhost</figcaption></figure>
+      <figure class="shot"><img src="img/06-mestre.png" alt="Batalha contra o Mestre Encapuzado" loading="lazy" width="640" height="480"><figcaption>Boss: Mestre Encapuzado</figcaption></figure>
+      <figure class="shot"><img src="img/02-dragoncity.png" alt="DragonCity" loading="lazy" width="640" height="480"><figcaption>DragonCity</figcaption></figure>
+      <figure class="shot"><img src="img/04-neosakura.png" alt="Neo-Sakura" loading="lazy" width="640" height="480"><figcaption>Neo-Sakura</figcaption></figure>
+      <figure class="shot"><img src="img/05-vulcao.png" alt="O vulcão e seus gêiseres" loading="lazy" width="640" height="480"><figcaption>O Gigante Adormecido</figcaption></figure>
+      <figure class="shot"><img src="img/08-surfe.png" alt="Minijogo de surfe" loading="lazy" width="640" height="480"><figcaption>Surfe na praia</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="recursos">
+    <h2>RECURSOS</h2>
+    <div class="cards">
+      <div class="card"><h3>BATALHAS</h3><p>LUTAR, AGIR, ITEM e POUPAR. Desvie dos ataques com a sua ALMA.</p></div>
+      <div class="card"><h3>3 ROTAS</h3><p>Pacifista, Neutra ou Genocida: suas escolhas mudam a história.</p></div>
+      <div class="card"><h3>DRAGÃO</h3><p>Escolha um dragão parceiro que evolui no topo de um vulcão.</p></div>
+      <div class="card"><h3>GRUPO</h3><p>Kai e Luna lutam do seu lado, como no Deltarune.</p></div>
+      <div class="card"><h3>14 FASES</h3><p>Labirinto, cidades, ilha, caverna, vulcão, arena, praia e mais.</p></div>
+      <div class="card"><h3>GRÁTIS</h3><p>No navegador, no Android e no Windows, com atualização automática.</p></div>
+    </div>
+  </section>
+
+  <section id="multiplayer">
+    <h2>MULTIPLAYER</h2>
+    <p class="sub">PC, celular e navegador jogam juntos, pela internet e sem VPN. Crie uma sala, passe o código e até 4 amigos entram. Quanto mais jogadores, mais difícil fica.</p>
+  </section>
+
+  <section id="baixar">
+    <h2>BAIXAR</h2>
+    <table>
+      <tr><th>Plataforma</th><th>Como jogar</th></tr>
+      <tr><td>Navegador</td><td><a href="jogar/">Jogar agora</a>, sem instalar nada (PC ou celular).</td></tr>
+      <tr><td>Android 7.0+</td><td>Baixe o <a href="https://github.com/heitorcoser/losters/releases/latest/download/Perdido.apk">Perdido.apk</a> e instale. Permita "fontes desconhecidas" se o Android pedir.</td></tr>
+      <tr><td>Windows 10/11</td><td>Baixe o <a href="https://github.com/heitorcoser/losters/releases/latest/download/Perdido-Setup.exe">Perdido-Setup.exe</a>. Se o Windows avisar, clique em "Mais informações" e depois em "Executar assim mesmo".</td></tr>
+    </table>
+  </section>
+
+  <section id="controles">
+    <h2>CONTROLES</h2>
+    <table>
+      <tr><th>Ação</th><th>Celular</th><th>Teclado</th></tr>
+      <tr><td>Andar</td><td>Analógico</td><td>Setas / WASD</td></tr>
+      <tr><td>Confirmar</td><td>Botão A</td><td>Z / Enter</td></tr>
+      <tr><td>Cancelar / menu</td><td>Botão B</td><td>X / Esc</td></tr>
+      <tr><td>Mover a alma</td><td>Analógico ou arrastar</td><td>Setas</td></tr>
+    </table>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <p>Feito com <span class="heart">&#9829;</span> e DETERMINAÇÃO · Ideia e história: <a href="https://github.com/Heitorcoser">Heitorcoser</a></p>
+  <p>Undertale e Deltarune pertencem a Toby Fox. Este é um projeto de fã, sem fins comerciais.</p>
+</div></footer>
+</body>
+</html>
