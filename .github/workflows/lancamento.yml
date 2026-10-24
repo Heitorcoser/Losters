@@ -7,7 +7,7 @@ name: Lançar versão
 on:
   push:
     branches: [main]
-    paths-ignore: ['README.md', 'arte/**', 'site/**', '.github/workflows/site.yml']
+    paths-ignore: ['README.md', 'arte/**', 'site/**', '.github/workflows/site.yml', 'graphify-out/**', '.claude/**', 'CLAUDE.md', '.graphifyignore', '.gitignore']
   workflow_dispatch:
 
 permissions:
