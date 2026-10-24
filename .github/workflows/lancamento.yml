@@ -1,0 +1,52 @@
+name: Lançar versão
+
+# A cada push na main, compila o APK. Se o versionCode do android/app/build.gradle
+# ainda não tem lançamento, cria um novo (tag v<versionCode>) com o Perdido.apk.
+# O jogo instalado procura esse lançamento e se atualiza sozinho.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  lancar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Ler versão
+        id: v
+        run: |
+          code=$(grep -oP "versionCode \K[0-9]+" android/app/build.gradle)
+          name=$(grep -oP "versionName '\K[^']+" android/app/build.gradle)
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          echo "name=$name" >> "$GITHUB_OUTPUT"
+          if git rev-parse -q --verify "refs/tags/v$code" >/dev/null; then echo "nova=0" >> "$GITHUB_OUTPUT"; else echo "nova=1" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Compilar APK
+        working-directory: android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon
+          cp app/build/outputs/apk/release/app-release.apk ../Perdido.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Perdido-APK
+          path: Perdido.apk
+      - name: Criar lançamento
+        if: steps.v.outputs.nova == '1'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.v.outputs.code }}
+          name: Perdido ${{ steps.v.outputs.name }}
+          body_path: NOVIDADES.md
+          files: Perdido.apk
+          make_latest: true

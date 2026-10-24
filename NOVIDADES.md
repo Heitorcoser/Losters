@@ -1,0 +1,2 @@
+- Kai e Luna agora viram para os lados e andam animados atrás de você.
+- Atualização automática: o jogo avisa quando sai versão nova e atualiza sozinho.
