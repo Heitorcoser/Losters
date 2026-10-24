@@ -7,13 +7,28 @@ Jogo 2D estilo Undertale para Android. Feito em HTML5 Canvas, empacotado em APK 
 ## Baixar e instalar
 
 1. Abra a página de **[Lançamentos (Releases)](https://github.com/heitorcoser/losters/releases/latest)** no celular.
-2. Baixe o **Perdido.apk** e instale (permita "instalar apps de fontes desconhecidas" se o Android pedir).
+2. No celular, baixe o **Perdido.apk** e instale. No PC (Windows 10/11), baixe o **Perdido-Setup.exe** (permita "instalar apps de fontes desconhecidas" se o Android pedir).
 3. Pronto! Depois disso o jogo **se atualiza sozinho**: quando sai versão nova, ele avisa ao abrir e instala com um toque.
 
 ### Como sai uma versão nova
 
 - Aumente o `versionCode` (e o `versionName`) em `android/app/build.gradle` e escreva as novidades em `NOVIDADES.md`.
 - Faça push na `main`. O GitHub Actions compila o APK e cria o lançamento `v<versionCode>` sozinho.
+
+## Versão para PC (Windows 10/11)
+
+- Na página de lançamentos, baixe o **Perdido-Setup.exe** e abra. Ele instala e já abre o jogo.
+- Controles: setas (andar), **Z** ou **Enter** (A), **X** ou **Esc** (B), **F11** (tela cheia).
+- O jogo de PC também se atualiza sozinho quando sai versão nova.
+
+## Multiplayer cooperativo (PC e celular juntos)
+
+- No título ou no menu (botão B → **MULTI**), escolha **CRIAR SALA**. Aparece um **código**.
+- Os amigos abrem o jogo (no PC ou no celular), vão em **MULTIPLAYER**, digitam o código e tocam em **ENTRAR**.
+- Funciona pela internet, sem VPN: a conexão é direta entre os aparelhos (WebRTC). Quando a rede não deixa conectar direto, ela passa por um servidor de repasse gratuito.
+- Quem criou a sala joga a história. Os amigos veem a tela do host, andam com o **próprio personagem** no mapa e desviam com a **própria alma** nas batalhas.
+- O HP é do grupo todo, e **quanto mais jogadores, mais difícil**: inimigos com mais vida, mais força e ataques mais rápidos.
+- Até 4 jogadores.
 
 ## Controles
 

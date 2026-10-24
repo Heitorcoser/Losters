@@ -1,8 +1,9 @@
 name: Lançar versão
 
-# A cada push na main, compila o APK. Se o versionCode do android/app/build.gradle
-# ainda não tem lançamento, cria um novo (tag v<versionCode>) com o Perdido.apk.
-# O jogo instalado procura esse lançamento e se atualiza sozinho.
+# A cada push na main compila o APK (Android) e o instalador (Windows 10/11).
+# Se o versionCode do android/app/build.gradle ainda não tem lançamento, cria um
+# novo (tag v<versionCode>) com o Perdido.apk e o Perdido-Setup.exe.
+# O jogo instalado (celular ou PC) procura esse lançamento e se atualiza sozinho.
 on:
   push:
     branches: [main]
@@ -12,7 +13,51 @@ permissions:
   contents: write
 
 jobs:
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Compilar APK
+        working-directory: android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon
+          cp app/build/outputs/apk/release/app-release.apk ../Perdido.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: android
+          path: Perdido.apk
+
+  windows:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Compilar instalador do Windows
+        working-directory: pc
+        run: |
+          code=$(sed -n "s/.*versionCode \([0-9]*\).*/\1/p" ../android/app/build.gradle)
+          cp -r ../www ./www
+          node -e "const f='package.json',p=require('./'+f);p.version='1.0.'+$code;p.perdido.versionCode=$code;require('fs').writeFileSync(f,JSON.stringify(p,null,2))"
+          npm install --no-audit --no-fund
+          npx electron-builder --win nsis --x64 --publish never
+          cp dist/Perdido-Setup.exe ../Perdido-Setup.exe
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows
+          path: Perdido-Setup.exe
+
   lancar:
+    needs: [android, windows]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,20 +71,10 @@ jobs:
           echo "code=$code" >> "$GITHUB_OUTPUT"
           echo "name=$name" >> "$GITHUB_OUTPUT"
           if git rev-parse -q --verify "refs/tags/v$code" >/dev/null; then echo "nova=0" >> "$GITHUB_OUTPUT"; else echo "nova=1" >> "$GITHUB_OUTPUT"; fi
-      - uses: actions/setup-java@v4
+      - uses: actions/download-artifact@v4
+        if: steps.v.outputs.nova == '1'
         with:
-          distribution: temurin
-          java-version: '17'
-      - name: Compilar APK
-        working-directory: android
-        run: |
-          chmod +x gradlew
-          ./gradlew assembleRelease --no-daemon
-          cp app/build/outputs/apk/release/app-release.apk ../Perdido.apk
-      - uses: actions/upload-artifact@v4
-        with:
-          name: Perdido-APK
-          path: Perdido.apk
+          merge-multiple: true
       - name: Criar lançamento
         if: steps.v.outputs.nova == '1'
         uses: softprops/action-gh-release@v2
@@ -47,5 +82,7 @@ jobs:
           tag_name: v${{ steps.v.outputs.code }}
           name: Perdido ${{ steps.v.outputs.name }}
           body_path: NOVIDADES.md
-          files: Perdido.apk
+          files: |
+            Perdido.apk
+            Perdido-Setup.exe
           make_latest: true

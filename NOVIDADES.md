@@ -1,2 +1,3 @@
-- Kai e Luna agora viram para os lados e andam animados atrás de você.
-- Atualização automática: o jogo avisa quando sai versão nova e atualiza sozinho.
+- MULTIPLAYER COOPERATIVO pela internet: PC e celular jogam juntos, sem VPN. Quem cria a sala joga a história; os amigos entram com o código, andam com o próprio personagem e desviam com a própria alma nas batalhas.
+- Quanto mais jogadores, mais difícil: inimigos com mais vida, mais força e ataques mais rápidos.
+- Versão para PC (Windows 10/11), com instalador e atualização automática. F11 = tela cheia.
