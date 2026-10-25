@@ -1,17 +1,17 @@
 # Graph Report - losters  (2026-10-25)
 
 ## Corpus Check
-- 52 files · ~144,128 words
+- 52 files · ~144,298 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 16 file(s) not represented in the graph (top: (none) 4, .xml 4, .properties 2)
 
 ## Summary
-- 856 nodes · 1035 edges · 49 communities (36 shown, 13 thin omitted)
+- 857 nodes · 1038 edges · 49 communities (36 shown, 13 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0df767a7`
+- Built from commit: `1b76cfc7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -210,7 +210,7 @@ Nodes (4): buildArenaTiles(), buildSprites8(), LEAO, LEAO_PAL
 
 ### Community 44 - "c2fase3.js"
 Cohesion: 0.06
-Nodes (13): bf(), BOX0, C2_COL, combo(), cSlash(), D_ATK, Det2, F2_ATK (+5 more)
+Nodes (14): bf(), BOX0, C2_COL, combo(), cSlash(), D_ATK, Det2, F2_ATK (+6 more)
 
 ### Community 45 - "c2fase2.js"
 Cohesion: 0.11
