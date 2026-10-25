@@ -7,3 +7,5 @@
 - A Fase 4 vem na próxima atualização.
 - Kai e Luna ganham dragões próprios.
 - 6 músicas novas.
+
+> ⚠️ Se o Google Play Protect avisar que o app é suspeito: é por causa da atualização automática (o jogo baixa e instala as versões novas daqui do GitHub). Ficou com dúvida? Envie o arquivo no [VirusTotal](https://www.virustotal.com) antes de instalar.

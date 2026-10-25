@@ -123,6 +123,11 @@ encontre um dragão, enfrente o Mestre Encapuzado... e descubra para onde você 
 > [!TIP]
 > **O jogo se atualiza sozinho.** Quando sai uma versão nova, ele avisa ao abrir e instala com um toque. O seu save continua salvo.
 
+> [!WARNING]
+> **O Google Play Protect (ou o antivírus) pode avisar que o app é "suspeito".** Isso acontece porque o jogo **não vem da Play Store** e tem **atualização automática**: ele baixa a versão nova do GitHub e pede pra instalar. É por isso que ele pede a permissão de *instalar apps*. O jogo não lê seus arquivos, contatos nem nada do celular.
+>
+> **Ficou com dúvida?** Envie o `Perdido.apk` (ou o `.exe`) no **[VirusTotal](https://www.virustotal.com)** antes de instalar: ele analisa o arquivo com dezenas de antivírus. E o código do jogo inteiro está aberto aqui no GitHub.
+
 Todas as versões ficam na página de **[Lançamentos](https://github.com/heitorcoser/losters/releases)**.
 
 ---
