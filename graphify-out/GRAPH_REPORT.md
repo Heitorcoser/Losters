@@ -1,17 +1,17 @@
 # Graph Report - losters  (2026-10-25)
 
 ## Corpus Check
-- 52 files · ~145,706 words
+- 52 files · ~147,192 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 16 file(s) not represented in the graph (top: (none) 4, .xml 4, .properties 2)
 
 ## Summary
-- 871 nodes · 1059 edges · 50 communities (37 shown, 13 thin omitted)
+- 877 nodes · 1070 edges · 54 communities (39 shown, 15 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `29c4a72c`
+- Built from commit: `16f340c5`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -63,10 +63,14 @@
 - cap2.js
 - sprites10.js
 - FinalBattle
+- update
+- gDoubleSeq
+- cSlash
+- gOnly
 
 ## God Nodes (most connected - your core abstractions)
 1. `Battle` - 43 edges
-2. `FinalBattle` - 25 edges
+2. `FinalBattle` - 28 edges
 3. `MasterBattle` - 23 edges
 4. `with` - 14 edges
 5. `Updater` - 12 edges
@@ -83,7 +87,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (50 total, 13 thin omitted)
+## Communities (54 total, 15 thin omitted)
 
 ### Community 0 - "Battle"
 Cohesion: 0.07
@@ -215,7 +219,7 @@ Nodes (4): buildArenaTiles(), buildSprites8(), LEAO, LEAO_PAL
 
 ### Community 44 - "c2fase3.js"
 Cohesion: 0.05
-Nodes (20): bf(), BOX0, C2_COL, combo(), cSlash(), D_ATK, Det2, F2_ATK (+12 more)
+Nodes (10): BOX0, C2_COL, D_ATK, Det2, F2_ATK, F2_TALK, GDIR, GDIRS (+2 more)
 
 ### Community 45 - "c2fase2.js"
 Cohesion: 0.11
@@ -233,8 +237,16 @@ Nodes (10): C2, C2_PHASES, C2_WHO, c2lines(), c2say(), c2show(), Card2, ChapterS
 Cohesion: 0.20
 Nodes (10): BOTA, buildSprites10(), CRIANCA, JORGE, JORGE_PAL, MORADOR, MORADOR_PALS, PEIXE (+2 more)
 
+### Community 50 - "update"
+Cohesion: 0.67
+Nodes (4): bf(), combo(), safeCorner(), update()
+
+### Community 51 - "gDoubleSeq"
+Cohesion: 0.50
+Nodes (4): gDoubleSeq(), gSeq(), opp(), rdir()
+
 ## Knowledge Gaps
-- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **15 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
