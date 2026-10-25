@@ -1,17 +1,17 @@
 # Graph Report - losters  (2026-10-25)
 
 ## Corpus Check
-- 52 files · ~138,681 words
+- 52 files · ~139,870 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 16 file(s) not represented in the graph (top: (none) 4, .xml 4, .properties 2)
 
 ## Summary
-- 830 nodes · 1001 edges · 49 communities (37 shown, 12 thin omitted)
+- 835 nodes · 1011 edges · 50 communities (37 shown, 13 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6e659d49`
+- Built from commit: `39857c60`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -62,11 +62,12 @@
 - c2fase1.js
 - cap2.js
 - sprites10.js
+- FinalBattle
 
 ## God Nodes (most connected - your core abstractions)
 1. `Battle` - 43 edges
 2. `MasterBattle` - 23 edges
-3. `FinalBattle` - 16 edges
+3. `FinalBattle` - 20 edges
 4. `with` - 14 edges
 5. `Updater` - 12 edges
 6. `MainActivity` - 11 edges
@@ -82,7 +83,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (49 total, 12 thin omitted)
+## Communities (50 total, 13 thin omitted)
 
 ### Community 0 - "Battle"
 Cohesion: 0.07
@@ -213,8 +214,8 @@ Cohesion: 0.50
 Nodes (4): buildArenaTiles(), buildSprites8(), LEAO, LEAO_PAL
 
 ### Community 44 - "c2fase3.js"
-Cohesion: 0.08
-Nodes (6): bf(), Det2, F2_TALK, FinalBattle, R3, update()
+Cohesion: 0.12
+Nodes (6): bf(), Det2, F2_ATK, F2_TALK, R3, update()
 
 ### Community 45 - "c2fase2.js"
 Cohesion: 0.11
@@ -233,22 +234,22 @@ Cohesion: 0.20
 Nodes (10): BOTA, buildSprites10(), CRIANCA, JORGE, JORGE_PAL, MORADOR, MORADOR_PALS, PEIXE (+2 more)
 
 ## Knowledge Gaps
-- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `Updater` connect `Updater.java` to `ApkProvider`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Should `Battle` be split into smaller, more focused modules?**
   _Cohesion score 0.07175141242937853 - nodes in this community are weakly interconnected._
 - **Should `engine.js` be split into smaller, more focused modules?**
   _Cohesion score 0.04625346901017576 - nodes in this community are weakly interconnected._
 - **Should `Updater.java` be split into smaller, more focused modules?**
-  _Cohesion score 0.06868686868686869 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.11397849462365592 - nodes in this community are weakly interconnected._
 - **Should `with` be split into smaller, more focused modules?**
   _Cohesion score 0.05975609756097561 - nodes in this community are weakly interconnected._
 - **Should `MasterBattle` be split into smaller, more focused modules?**
   _Cohesion score 0.08048780487804878 - nodes in this community are weakly interconnected._
 - **Should `pc/main.js` be split into smaller, more focused modules?**
   _Cohesion score 0.08866995073891626 - nodes in this community are weakly interconnected._
-- **Should `sprites.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.08465608465608465 - nodes in this community are weakly interconnected._

@@ -98,7 +98,7 @@ encontre um dragão, enfrente o Mestre Encapuzado... e descubra para onde você 
 
 | | |
 |---|---|
-| Fases | **17** (14 no Capítulo 1 + 3 no Capítulo 2) |
+| Fases | **17** (14 no Capítulo 1 + 3 do Capítulo 2, e vem mais) |
 | Chefes | **10+** |
 | Personagens | **40+** |
 | Músicas | **45+** |
@@ -427,7 +427,7 @@ Algumas lutas da história são **1 contra 1** (como contra o Mestre Encapuzado)
 
 </details>
 
-> **CAPÍTULO 3: em breve.**
+> **Capítulo 2, Fase 4: em breve.**
 
 ---
 
