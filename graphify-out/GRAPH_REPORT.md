@@ -1,17 +1,17 @@
-# Graph Report - losters  (2026-10-24)
+# Graph Report - losters  (2026-10-25)
 
 ## Corpus Check
-- 47 files · ~119,989 words
+- 52 files · ~138,681 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 16 file(s) not represented in the graph (top: (none) 4, .xml 4, .properties 2)
 
 ## Summary
-- 737 nodes · 901 edges · 44 communities (32 shown, 12 thin omitted)
+- 830 nodes · 1001 edges · 49 communities (37 shown, 12 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `447025ea`
+- Built from commit: `6e659d49`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -56,18 +56,24 @@
 - CLAUDE.md
 - .claude/CLAUDE.md
 - audio.js
+- NOVIDADES.md
+- c2fase3.js
+- c2fase2.js
+- c2fase1.js
+- cap2.js
+- sprites10.js
 
 ## God Nodes (most connected - your core abstractions)
 1. `Battle` - 43 edges
 2. `MasterBattle` - 23 edges
-3. `with` - 14 edges
-4. `Updater` - 12 edges
-5. `MainActivity` - 11 edges
-6. `ApkProvider` - 9 edges
-7. `TrainBattle` - 8 edges
-8. `steps` - 7 edges
-9. `build` - 7 edges
-10. `steps` - 6 edges
+3. `FinalBattle` - 16 edges
+4. `with` - 14 edges
+5. `Updater` - 12 edges
+6. `MainActivity` - 11 edges
+7. `ApkProvider` - 9 edges
+8. `TrainBattle` - 8 edges
+9. `steps` - 7 edges
+10. `build` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `MainActivity` --references--> `Updater`  [EXTRACTED]
@@ -76,7 +82,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (44 total, 12 thin omitted)
+## Communities (49 total, 12 thin omitted)
 
 ### Community 0 - "Battle"
 Cohesion: 0.07
@@ -167,8 +173,8 @@ Cohesion: 0.16
 Nodes (4): build(), genMaze(), mazePath(), P1
 
 ### Community 26 - "README.md"
-Cohesion: 0.18
-Nodes (10): ⬇️ Baixar e instalar, 🕹️ Controles, 🛠️ Desenvolvimento, 📖 História — Capítulo 1, 👥 Multiplayer cooperativo, 🧑‍🤝‍🧑 Personagens, 🔥 Quanto mais jogadores, mais difícil, ⚖️ Rotas (+2 more)
+Cohesion: 0.17
+Nodes (11): ⬇️ Baixar e instalar, 🕹️ Controles, 🛠️ Desenvolvimento, 📖 História — Capítulo 1, 🔴 História — Capítulo 2: Determinação, 👥 Multiplayer cooperativo, 🧑‍🤝‍🧑 Personagens, 🔥 Quanto mais jogadores, mais difícil (+3 more)
 
 ### Community 27 - "sprites5.js"
 Cohesion: 0.20
@@ -205,6 +211,26 @@ Nodes (4): Coop, COOP_COLORS, COOP_ICE, CoopUI
 ### Community 35 - "sprites8.js"
 Cohesion: 0.50
 Nodes (4): buildArenaTiles(), buildSprites8(), LEAO, LEAO_PAL
+
+### Community 44 - "c2fase3.js"
+Cohesion: 0.08
+Nodes (6): bf(), Det2, F2_TALK, FinalBattle, R3, update()
+
+### Community 45 - "c2fase2.js"
+Cohesion: 0.11
+Nodes (4): C2TrainBattle, D2, musicAt(), update()
+
+### Community 46 - "c2fase1.js"
+Cohesion: 0.12
+Nodes (4): A1, FISH2, Lab2, Voo2
+
+### Community 47 - "cap2.js"
+Cohesion: 0.22
+Nodes (10): C2, C2_PHASES, C2_WHO, c2lines(), c2say(), c2show(), Card2, ChapterSel (+2 more)
+
+### Community 48 - "sprites10.js"
+Cohesion: 0.20
+Nodes (10): BOTA, buildSprites10(), CRIANCA, JORGE, JORGE_PAL, MORADOR, MORADOR_PALS, PEIXE (+2 more)
 
 ## Knowledge Gaps
 - **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.

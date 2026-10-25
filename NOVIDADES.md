@@ -1,3 +1,8 @@
-- MULTIPLAYER COOPERATIVO pela internet: PC e celular jogam juntos, sem VPN. Quem cria a sala joga a história; os amigos entram com o código, andam com o próprio personagem e desviam com a própria alma nas batalhas.
-- Quanto mais jogadores, mais difícil: inimigos com mais vida, mais força e ataques mais rápidos.
-- Versão para PC (Windows 10/11), com instalador e atualização automática. F11 = tela cheia.
+## CAPÍTULO 2: DETERMINAÇÃO 🔴
+
+- Nova tela de **CAPÍTULOS**: dá pra jogar o Capítulo 2 sem terminar o 1. Cada capítulo tem seu próprio save (se você já tem o Capítulo 1, ele aproveita seu nome, dragão e nível).
+- **Fase 1: Vila Aurora** — uma vila de neve na Antártica, linda e pobre. Aprenda a **PESCAR** no lago congelado com o Seu Jorge, alimente o povo e descubra quem é o Instrutor de verdade.
+- **Fase 2: A Arena dos Doces** — o antigo campo virou arena de treino (e o Macaron está na cadeia). Três treinos com o Instrutor... e uma despedida.
+- **Fase 3: O Altar das Almas** — a batalha final contra a Carmim e o Encapuzado, com seus amigos, os dragões e o Instrutor do seu lado.
+- Kai e Luna ganham dragões próprios.
+- 6 músicas novas.

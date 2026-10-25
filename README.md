@@ -98,7 +98,7 @@ encontre um dragão, enfrente o Mestre Encapuzado... e descubra para onde você 
 
 | | |
 |---|---|
-| Fases | **14** (Capítulo 1) |
+| Fases | **17** (14 no Capítulo 1 + 3 no Capítulo 2) |
 | Chefes | **10+** |
 | Personagens | **40+** |
 | Músicas | **45+** |
@@ -390,7 +390,44 @@ Algumas lutas da história são **1 contra 1** (como contra o Mestre Encapuzado)
 | ⚖️ **Neutra** | Qualquer outro caso | Mais chefes, menos amigos |
 | 🔪 **Genocida** | 6+ derrotados e no máximo 2 poupados | O mundo tem medo de você |
 
-> **CAPÍTULO 2: em breve.**
+## 🔴 História — Capítulo 2: Determinação
+
+> Pode ser jogado sem terminar o Capítulo 1 (tela **CAPÍTULOS** no menu).
+
+<details>
+<summary><b>❄️ Fase 1 — Vila Aurora</b></summary>
+
+<br>
+
+- Uma vila de neve na **Antártica**, linda... e com fome.
+- O **Seu Jorge** ensina a **pescar** no lago congelado. Cada peixe ajuda a vila (e vira comida pra lutar depois).
+- No beco, o Encapuzado conversa com uma **sombra** que tem a sua forma.
+- Um telefonema pro Mestre Leão revela o nome verdadeiro do Instrutor: **CARMINO**.
+- Kai e Luna ganham dragões, e o grupo voa até o labirinto.
+
+</details>
+
+<details>
+<summary><b>🍬 Fase 2 — A Arena dos Doces</b></summary>
+
+<br>
+
+- O antigo campo virou **arena de treino**. O Macaron está na cadeia.
+- Três treinos com o Instrutor. E uma noite em volta da fogueira que ninguém vai esquecer.
+
+</details>
+
+<details>
+<summary><b>🩸 Fase 3 — O Altar das Almas</b></summary>
+
+<br>
+
+- Seis almas presas. A Carmim e o Encapuzado.
+- A luta do bem contra o mal.
+
+</details>
+
+> **CAPÍTULO 3: em breve.**
 
 ---
 
@@ -519,6 +556,8 @@ www/              o jogo (HTML5 Canvas + WebAudio)
   js/audio.js       efeitos e sequenciador de músicas
   js/sprites*.js    pixel art e tiles de cada fase
   js/phase1-14.js   as 14 fases do Capítulo 1
+  js/cap2.js        lista de capítulos e estrutura do Capítulo 2
+  js/c2fase1-3.js   as 3 fases do Capítulo 2
   js/quests.js      painel de missões e seta de objetivo
   js/main.js        título, cartões de fase, finais e créditos
   lib/peerjs.min.js PeerJS (licença MIT)

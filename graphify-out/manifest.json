@@ -6,9 +6,9 @@
     "semantic_hash": ""
   },
   ".github/workflows/lancamento.yml": {
-    "mtime": 1792867838.9188037,
-    "seen": 1792884519.4063983,
-    "ast_hash": "379716fcf16d83c74cedd0038390dbb4",
+    "mtime": 1792884529.6216393,
+    "seen": 1792902871.7354915,
+    "ast_hash": "cda81e16c383ba5f58c64b88f499747d",
     "semantic_hash": ""
   },
   ".github/workflows/site.yml": {
@@ -18,9 +18,9 @@
     "semantic_hash": ""
   },
   "android/app/build.gradle": {
-    "mtime": 1792865063.5884585,
-    "seen": 1792884519.4064038,
-    "ast_hash": "e15525d3c5858b8b247f9b64de212e7d",
+    "mtime": 1792900674.8263888,
+    "seen": 1792902871.735499,
+    "ast_hash": "cae63a52d8c8af19a0265fb651be6724",
     "semantic_hash": ""
   },
   "android/app/src/main/java/com/heitorcoser/perdido/ApkProvider.java": {
@@ -72,9 +72,9 @@
     "semantic_hash": ""
   },
   "www/js/audio.js": {
-    "mtime": 1792865063.5803428,
-    "seen": 1792884519.406415,
-    "ast_hash": "5a846d26ef8ee264124ee6787daebc88",
+    "mtime": 1792898810.8263643,
+    "seen": 1792902871.7355154,
+    "ast_hash": "a3cb0ecc1e7cc4d74a409f24bd4e1d0a",
     "semantic_hash": ""
   },
   "www/js/battle.js": {
@@ -96,15 +96,15 @@
     "semantic_hash": ""
   },
   "www/js/engine.js": {
-    "mtime": 1792865063.579122,
-    "seen": 1792884519.4064195,
-    "ast_hash": "7eda7365f6d8ba0b232578e535bfd6d5",
+    "mtime": 1792898815.5323067,
+    "seen": 1792902871.7355278,
+    "ast_hash": "153f564fd9e3c8b98c1b51c0a4f2b1d6",
     "semantic_hash": ""
   },
   "www/js/main.js": {
-    "mtime": 1792865063.5801868,
-    "seen": 1792884519.4064202,
-    "ast_hash": "708dfe06a65b030292e395d960f80b88",
+    "mtime": 1792899060.148494,
+    "seen": 1792902871.7355292,
+    "ast_hash": "d9e1547303d111765f56c32ee60bb913",
     "semantic_hash": ""
   },
   "www/js/phase1.js": {
@@ -198,9 +198,9 @@
     "semantic_hash": ""
   },
   "www/js/sprites.js": {
-    "mtime": 1792865063.5810428,
-    "seen": 1792884519.406437,
-    "ast_hash": "6efb8605f140248723f3eb814f9f3222",
+    "mtime": 1792898853.4980752,
+    "seen": 1792902871.7355516,
+    "ast_hash": "b2fce7850d17ba430587dc3e9b825769",
     "semantic_hash": ""
   },
   "www/js/sprites2.js": {
@@ -270,15 +270,15 @@
     "semantic_hash": ""
   },
   "NOVIDADES.md": {
-    "mtime": 1792865013.8808413,
-    "seen": 1792884519.40645,
-    "ast_hash": "06338270c484fd737707478660abc600",
+    "mtime": 1792900674.8026648,
+    "seen": 1792902871.7355733,
+    "ast_hash": "2a8a81662feff741789383ee1241a20d",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1792868080.3924875,
-    "seen": 1792884519.406451,
-    "ast_hash": "84dcdc9940cfd1947bfb1829e9bd3813",
+    "mtime": 1792900674.8212502,
+    "seen": 1792902871.7355745,
+    "ast_hash": "c01b501f999c319b63c4efd792a6a120",
     "semantic_hash": ""
   },
   "site/index.html": {
@@ -306,9 +306,9 @@
     "semantic_hash": ""
   },
   "www/index.html": {
-    "mtime": 1792867838.9364738,
-    "seen": 1792884519.4064562,
-    "ast_hash": "001d5eeb40fd4cbf5bba082554e5fc83",
+    "mtime": 1792899747.0919874,
+    "seen": 1792902871.735582,
+    "ast_hash": "6daac178aa9447bba7d3649b5ee8c7ef",
     "semantic_hash": ""
   },
   "android/app/src/main/res/mipmap-hdpi/ic_launcher.png": {
@@ -369,6 +369,36 @@
     "mtime": 1792867838.9234815,
     "seen": 1792884519.4064667,
     "ast_hash": "b31cb0d575abe5ccfee9de143c912bb4",
+    "semantic_hash": ""
+  },
+  "www/js/c2fase1.js": {
+    "mtime": 1792902792.3980112,
+    "seen": 1792902871.7355206,
+    "ast_hash": "9c928069bd0b297b3d4249636a3f42fb",
+    "semantic_hash": ""
+  },
+  "www/js/c2fase2.js": {
+    "mtime": 1792899790.9724734,
+    "seen": 1792902871.7355218,
+    "ast_hash": "46bd15f970bb3978fe77f65508e81425",
+    "semantic_hash": ""
+  },
+  "www/js/c2fase3.js": {
+    "mtime": 1792902869.4710457,
+    "seen": 1792902871.735523,
+    "ast_hash": "982ddc6769620904fe1651c8a803aeda",
+    "semantic_hash": ""
+  },
+  "www/js/cap2.js": {
+    "mtime": 1792902792.3972285,
+    "seen": 1792902871.7355242,
+    "ast_hash": "555b370a909066e75e13f855995c381e",
+    "semantic_hash": ""
+  },
+  "www/js/sprites10.js": {
+    "mtime": 1792899592.3363714,
+    "seen": 1792902871.7355528,
+    "ast_hash": "b56927827487a469e703400a590a1039",
     "semantic_hash": ""
   }
 }
