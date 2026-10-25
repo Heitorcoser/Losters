@@ -18,26 +18,26 @@
     "semantic_hash": ""
   },
   "android/app/build.gradle": {
-    "mtime": 1792940657.0499215,
-    "seen": 1792940660.7955484,
-    "ast_hash": "a43f97308bf02274480c6b6f72a99a4b",
+    "mtime": 1792943714.6796706,
+    "seen": 1792943717.060117,
+    "ast_hash": "703a7a976664599f643164f78a65056c",
     "semantic_hash": ""
   },
   "android/app/src/main/java/com/heitorcoser/perdido/ApkProvider.java": {
-    "mtime": 1792865063.5843952,
-    "seen": 1792884519.4064052,
+    "mtime": 1792942059.6575108,
+    "seen": 1792943717.0601196,
     "ast_hash": "eb7be1b4e03046c8abe6348515320198",
     "semantic_hash": ""
   },
   "android/app/src/main/java/com/heitorcoser/perdido/MainActivity.java": {
-    "mtime": 1792865063.5843656,
-    "seen": 1792884519.4064064,
+    "mtime": 1792942059.6575108,
+    "seen": 1792943717.0601208,
     "ast_hash": "2317de100799ab69401be81f1b61e46f",
     "semantic_hash": ""
   },
   "android/app/src/main/java/com/heitorcoser/perdido/Updater.java": {
-    "mtime": 1792865063.5844147,
-    "seen": 1792884519.4064076,
+    "mtime": 1792942059.6575108,
+    "seen": 1792943717.0601218,
     "ast_hash": "44a3c8af7719d1bf6a7e50354c12e084",
     "semantic_hash": ""
   },
@@ -270,21 +270,21 @@
     "semantic_hash": ""
   },
   "NOVIDADES.md": {
-    "mtime": 1792940657.0403702,
-    "seen": 1792940660.7956266,
-    "ast_hash": "74877c3af28a29070273130d4134520f",
+    "mtime": 1792943714.673815,
+    "seen": 1792943717.0601811,
+    "ast_hash": "a595b08745769bb78f4cf5defbc50c78",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1792940657.039201,
-    "seen": 1792940660.7956283,
-    "ast_hash": "8df6f941c040a239155a4a549cc63f01",
+    "mtime": 1792942073.196403,
+    "seen": 1792943717.0601823,
+    "ast_hash": "963abd73cfcbde6c7c09e7c3a97f53a6",
     "semantic_hash": ""
   },
   "site/index.html": {
-    "mtime": 1792868272.8530478,
-    "seen": 1792884519.406452,
-    "ast_hash": "fb357fe943b4b45d063e1fdcecda1c36",
+    "mtime": 1792942073.1972225,
+    "seen": 1792943717.0601833,
+    "ast_hash": "750772c0ac191d83a78730452b57fbf0",
     "semantic_hash": ""
   },
   "site/robots.txt": {
@@ -384,15 +384,15 @@
     "semantic_hash": ""
   },
   "www/js/c2fase3.js": {
-    "mtime": 1792940525.1338444,
-    "seen": 1792940660.7955766,
-    "ast_hash": "efeb5b58bc0fb6e23a82dd48465dc0ca",
+    "mtime": 1792943411.817039,
+    "seen": 1792943717.0601382,
+    "ast_hash": "0e79c55febcaeca2f91db97a54f47ee2",
     "semantic_hash": ""
   },
   "www/js/cap2.js": {
-    "mtime": 1792940525.1347854,
-    "seen": 1792940660.7955785,
-    "ast_hash": "62f3570623b22a7b624f6a0e8edb3629",
+    "mtime": 1792943714.6554766,
+    "seen": 1792943717.0601401,
+    "ast_hash": "0964c38a4f4404f1f4e54c0f37146ca0",
     "semantic_hash": ""
   },
   "www/js/sprites10.js": {

@@ -1,17 +1,17 @@
 # Graph Report - losters  (2026-10-25)
 
 ## Corpus Check
-- 52 files · ~139,870 words
+- 52 files · ~143,080 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 16 file(s) not represented in the graph (top: (none) 4, .xml 4, .properties 2)
 
 ## Summary
-- 835 nodes · 1011 edges · 50 communities (37 shown, 13 thin omitted)
+- 852 nodes · 1029 edges · 49 communities (36 shown, 13 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `39857c60`
+- Built from commit: `efccfefb`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -35,7 +35,6 @@
 - phase13.js
 - phase9.js
 - phase6.js
-- build
 - phase12.js
 - phase14.js
 - phase7.js
@@ -83,7 +82,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (50 total, 13 thin omitted)
+## Communities (49 total, 13 thin omitted)
 
 ### Community 0 - "Battle"
 Cohesion: 0.07
@@ -102,8 +101,8 @@ Cohesion: 0.08
 Nodes (16): BLASTER, BLASTER_OPEN, boss9Sprites(), bt9(), drawBlaster(), M9_COLORS, M9_FLAVOR, M9_PHASES (+8 more)
 
 ### Community 5 - "pc/main.js"
-Cohesion: 0.09
-Nodes (21): checkUpdate(), createWindow(), download(), getJSON(), request(), author, description, devDependencies (+13 more)
+Cohesion: 0.05
+Nodes (36): checkUpdate(), createWindow(), download(), getJSON(), request(), author, build, appId (+28 more)
 
 ### Community 6 - "sprites.js"
 Cohesion: 0.08
@@ -148,10 +147,6 @@ Nodes (6): DOORS9, dragonEnt9(), ents(), musicAt(), P9, update()
 ### Community 18 - "phase6.js"
 Cohesion: 0.14
 Nodes (6): Cine6, critter(), ents(), musicAt(), P6, update()
-
-### Community 19 - "build"
-Cohesion: 0.13
-Nodes (15): build, appId, directories, files, nsis, productName, win, output (+7 more)
 
 ### Community 20 - "phase12.js"
 Cohesion: 0.14
@@ -214,8 +209,8 @@ Cohesion: 0.50
 Nodes (4): buildArenaTiles(), buildSprites8(), LEAO, LEAO_PAL
 
 ### Community 44 - "c2fase3.js"
-Cohesion: 0.12
-Nodes (6): bf(), Det2, F2_ATK, F2_TALK, R3, update()
+Cohesion: 0.06
+Nodes (11): bf(), BOX0, C2_COL, cSlash(), D_ATK, Det2, F2_ATK, F2_TALK (+3 more)
 
 ### Community 45 - "c2fase2.js"
 Cohesion: 0.11
@@ -239,10 +234,12 @@ Nodes (10): BOTA, buildSprites10(), CRIANCA, JORGE, JORGE_PAL, MORADOR, MORADOR_
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Updater` connect `Updater.java` to `ApkProvider`?**
+- **Why does `FinalBattle` connect `FinalBattle` to `c2fase3.js`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Should `Battle` be split into smaller, more focused modules?**
   _Cohesion score 0.07175141242937853 - nodes in this community are weakly interconnected._
+- **Why does `Updater` connect `Updater.java` to `ApkProvider`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Should `engine.js` be split into smaller, more focused modules?**
   _Cohesion score 0.04625346901017576 - nodes in this community are weakly interconnected._
 - **Should `Updater.java` be split into smaller, more focused modules?**
@@ -251,5 +248,3 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.05975609756097561 - nodes in this community are weakly interconnected._
 - **Should `MasterBattle` be split into smaller, more focused modules?**
   _Cohesion score 0.08048780487804878 - nodes in this community are weakly interconnected._
-- **Should `pc/main.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.08866995073891626 - nodes in this community are weakly interconnected._
