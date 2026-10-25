@@ -18,9 +18,9 @@
     "semantic_hash": ""
   },
   "android/app/build.gradle": {
-    "mtime": 1792943714.6796706,
-    "seen": 1792943717.060117,
-    "ast_hash": "703a7a976664599f643164f78a65056c",
+    "mtime": 1792944174.201222,
+    "seen": 1792944176.3309913,
+    "ast_hash": "297fc643372ff9c3e6d0b597d3cb06bb",
     "semantic_hash": ""
   },
   "android/app/src/main/java/com/heitorcoser/perdido/ApkProvider.java": {
@@ -384,9 +384,9 @@
     "semantic_hash": ""
   },
   "www/js/c2fase3.js": {
-    "mtime": 1792943411.817039,
-    "seen": 1792943717.0601382,
-    "ast_hash": "0e79c55febcaeca2f91db97a54f47ee2",
+    "mtime": 1792944142.556424,
+    "seen": 1792944176.3310416,
+    "ast_hash": "5b5251b0b19f6fe6f0dd1466b4542567",
     "semantic_hash": ""
   },
   "www/js/cap2.js": {

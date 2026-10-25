@@ -1,7 +1,7 @@
 # Graph Report - losters  (2026-10-25)
 
 ## Corpus Check
-- 52 files · ~143,080 words
+- 52 files · ~143,158 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 16 file(s) not represented in the graph (top: (none) 4, .xml 4, .properties 2)
 
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `efccfefb`
+- Built from commit: `27021d90`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
