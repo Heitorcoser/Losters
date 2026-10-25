@@ -4,7 +4,7 @@
 - **Fase 1: Vila Aurora** — uma vila de neve na Antártica, linda e pobre. Aprenda a **PESCAR** no lago congelado com o Seu Jorge, alimente o povo e descubra quem é o Instrutor de verdade.
 - **Fase 2: A Arena dos Doces** — o antigo campo virou arena de treino (e o Macaron está na cadeia). Três treinos com o Instrutor... e uma despedida.
 - **Fase 3: O Altar das Almas** — batalha final com ataques NOVOS e muito difíceis: a Carmim e o Encapuzado atacam JUNTOS (cortes em círculo, anel de facas, gravidade que muda de lado, caixa correndo pela tela, braços de osso girando). Depois a Carmim sozinha: investidas, mãos de sombra, cortes azuis/laranjas, espiral, cópias da sua alma te perseguindo e um ataque final de 22 segundos. Com KARMA.
-- **2ª fase da batalha final:** depois de vencer os dois, eles DESPERTAM. O botão POUPAR quebra e os ataques dos dois vêm combinados, até o ÚLTIMO SUSPIRO (26 segundos).
+- **2ª fase da batalha final:** depois de vencer os dois, eles DESPERTAM e o POUPAR quebra. Sua alma fica VERDE: vire o ESCUDO pra bloquear facas, corações, ossos e canhões que vêm dos 4 lados (os amarelos dão a volta!). Termina no ÚLTIMO SUSPIRO.
 - A Fase 4 vem na próxima atualização.
 - Kai e Luna ganham dragões próprios.
 - 6 músicas novas.
